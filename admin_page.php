@@ -31,7 +31,7 @@ include 'head.php';
   </div>
 
   <div style="overflow-x:auto;padding:10Px;">
-    <table class="table table-hover table-striped table-bordered table-sm" id="dtHorizontalVerticalExample">
+    <table class="table table-hover table-striped table-bordered table-sm table-responsive" id="dtHorizontalVerticalExample">
       <!-- หัวข้อตาราง -->
       <tr align='center' bgcolor='#CCCCCC'>
         <td>id</td>
@@ -47,15 +47,16 @@ include 'head.php';
         <td>ข้อ 3.2</td>
         <td>ข้อ 3.3</td>
         <td>ข้อ 3.4</td>
-        <td>วันที่สะดวกเข้าร่วมในครั้งถัดไป</td>
         <td>ข้อ 4.1</td>
         <td>ข้อ 4.2</td>
         <td>ข้อ 4.3</td>
         <td>ข้อ 4.4</td>
         <td>ข้อ 4.5</td>
-        <td>Monitoring as a Service</td>
-        <td>Software Defined Infrastructure</td>
-        <td>หัวข้อสัมมนาที่ต้องการในครั้งถัดไป</td>
+        <td>ยินดีเข้าร่วมหรือไม่</td>
+        <td>สะดวกเข้าร่วมช่วงเวลาใด</td>
+        <td>กิจกรรมที่ต้องการให้จัดในครั้งถัดไป</td>
+        <td>อื่นๆ</td>
+        <td>ทำไมถึงตัดสินใจเข้าร่วมงานสัมมนา</td>
         <td>ข้อเสนอแนะเพิ่มเติม</td>
         <!-- <td>ลบข้อมูล</td> -->
       </tr>
@@ -64,8 +65,8 @@ include 'head.php';
       while ($row = mysqli_fetch_array($result)) {
         echo "<tr>";
         echo "<td>" . $row["id"] .  "</td> ";
-        echo "<td>" . $row["date_event"] .  "</td> ";
         echo "<td>" . $row["date_time"] .  "</td> ";
+        echo "<td>" . $row["date_event"] .  "</td> ";
         echo "<td>" . $row["q1_1"] .  "</td> ";
         echo "<td>" . $row["q1_2"] .  "</td> ";
         echo "<td>" . $row["q2_1"] .  "</td> ";
@@ -76,15 +77,16 @@ include 'head.php';
         echo "<td>" . $row["q3_2"] .  "</td> ";
         echo "<td>" . $row["q3_3"] .  "</td> ";
         echo "<td>" . $row["q3_4"] .  "</td> ";
-        echo "<td>" . $row["q3_time"] .  "</td> ";
         echo "<td>" . $row["q4_1"] .  "</td> ";
         echo "<td>" . $row["q4_2"] .  "</td> ";
         echo "<td>" . $row["q4_3"] .  "</td> ";
         echo "<td>" . $row["q4_4"] .  "</td> ";
         echo "<td>" . $row["q4_5"] .  "</td> ";
-        echo "<td>" . $row["q5_1"] .  "</td> ";
-        echo "<td>" . $row["q5_2"] .  "</td> ";
-        echo "<td>" . $row["next_seminar_detail"] .  "</td> ";
+        echo "<td>" . $row["q5"] .  "</td> ";
+        echo "<td>" . $row["q6"] .  "</td> ";
+        echo "<td>" . $row["q7"] .  "</td> ";
+        echo "<td>" . $row["another_Q7"] .  "</td> ";
+        echo "<td>" . $row["seminar_detail"] .  "</td> ";
         echo "<td>" . $row["suggestions_detail"] .  "</td> ";
 
         //ลบข้อมูล
@@ -95,7 +97,8 @@ include 'head.php';
       mysqli_close($conn);
       ?>
   </div>
-  <script>
+
+  <!-- <script>
     $(document).ready(function() {
       $('#dtHorizontalExample').DataTable({
         "scrollX": true
@@ -127,7 +130,7 @@ include 'head.php';
     table.dataTable thead .sorting_desc_disabled:before {
       bottom: .5em;
     }
-  </style>
+  </style> -->
 </body>
 
 </html>

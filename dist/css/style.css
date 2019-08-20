@@ -4,7 +4,6 @@
 
 .table tbody {
   color: #696969;
-  
 }
 
 input[type="radio"] {
@@ -12,7 +11,33 @@ input[type="radio"] {
   margin: 0 20px;
   width: 18px;
   height: 18px;
-  
   /* border-radius: 50%; */
-  
+}
+
+.choice-checkbox {
+  padding-left: 20px;
+}
+
+.custom-control-label {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.checkbox-lg .custom-control-label::before, .checkbox-lg .custom-control-label::after {
+  top: .8rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.checkbox-lg .custom-control-label {
+  padding-top: 8px;
+  padding-left: 20px;
+}
+
+.custom-radio {
+  padding-left: 45px;
 }

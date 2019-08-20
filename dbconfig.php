@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Bangkok');
 $servername = "localhost";
   $username = "root";
   $password = "";
-  $dbname = "it_infrastructure_august";
+  $dbname = "loga_survey2";
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
   mysqli_set_charset($conn, "utf8");

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 14, 2019 at 10:56 AM
+-- Generation Time: Aug 20, 2019 at 08:34 AM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.3.6
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `it_infrastructure_august`
+-- Database: `loga_survey2`
 --
 
 -- --------------------------------------------------------
@@ -30,8 +30,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `answers` (
   `id` int(11) NOT NULL,
-  `date_event` varchar(150) NOT NULL,
   `date_time` timestamp NOT NULL DEFAULT current_timestamp(),
+  `date_event` varchar(255) NOT NULL,
   `q1_1` int(11) NOT NULL,
   `q1_2` int(11) NOT NULL,
   `q2_1` int(11) NOT NULL,
@@ -42,36 +42,37 @@ CREATE TABLE `answers` (
   `q3_2` int(11) NOT NULL,
   `q3_3` int(11) NOT NULL,
   `q3_4` int(11) NOT NULL,
-  `q3_time` varchar(100) NOT NULL,
   `q4_1` int(11) NOT NULL,
   `q4_2` int(11) NOT NULL,
   `q4_3` int(11) NOT NULL,
   `q4_4` int(11) NOT NULL,
   `q4_5` int(11) NOT NULL,
-  `q5_1` varchar(100) NOT NULL,
-  `q5_2` varchar(100) NOT NULL,
-  `next_seminar_detail` varchar(100) NOT NULL,
-  `suggestions_detail` varchar(100) NOT NULL
+  `q5` varchar(255) NOT NULL,
+  `q6` varchar(255) NOT NULL,
+  `q7` varchar(255) NOT NULL,
+  `another_Q7` varchar(255) DEFAULT NULL,
+  `seminar_detail` varchar(255) NOT NULL,
+  `suggestions_detail` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `member`
+-- Table structure for table `members`
 --
 
-CREATE TABLE `member` (
-  `user_id` int(5) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `pass` varchar(100) NOT NULL,
-  `status` varchar(100) NOT NULL DEFAULT 'admin'
+CREATE TABLE `members` (
+  `user_id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `pass` varchar(255) NOT NULL,
+  `status` varchar(255) NOT NULL DEFAULT 'admin'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `member`
+-- Dumping data for table `members`
 --
 
-INSERT INTO `member` (`user_id`, `username`, `pass`, `status`) VALUES
+INSERT INTO `members` (`user_id`, `username`, `pass`, `status`) VALUES
 (1, 'sdiadmin', 'mis@Pass01', 'admin');
 
 --
@@ -85,9 +86,9 @@ ALTER TABLE `answers`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `member`
+-- Indexes for table `members`
 --
-ALTER TABLE `member`
+ALTER TABLE `members`
   ADD PRIMARY KEY (`user_id`);
 
 --
@@ -101,10 +102,10 @@ ALTER TABLE `answers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `member`
+-- AUTO_INCREMENT for table `members`
 --
-ALTER TABLE `member`
-  MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `members`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

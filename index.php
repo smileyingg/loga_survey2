@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php include 'head.php'; ?>
+<?php include 'script_choices.php';  ?>
 
 <style>
   .h-form .form-body .h-form-label {
@@ -12,8 +13,8 @@
   <?php include 'header.php'; ?>
   <div class="container-fluid">
     <div class="col s12">
-      <h4 style="text-align:center;">แบบประเมินความพึงพอใจการร่วมงานสัมมนา "การบริหารจัดการ IT Infrastructure ในยุคดิจิทัล"</h4>
-      <h4 style="text-align:center;">เดือน สิงหาคม 2562 เวลา 13.30-16.30 น. ชั้น 16 ห้อง 16-2 อาคารไทยซัมมิททาวเวอร์ ถ.เพชรบุรีตัดใหม่</h4><br />
+      <h4 style="text-align:center;">แบบสำรวจความพึงพอใจในการสัมมนากลยุทธ์เด็ด มัดใจลูกค้า รู้เขา รู้เรา ขายร้อย ได้ล้าน</h4>
+      <h4 style="text-align:center;">เวลา 12:30-17:30 น. ชั้น 8 Meeting room 5 อาคารไทยซัมมิททาวเวอร์ ถ.เพชรบุรีตัดใหม่</h4><br />
       <div class="card">
 
         <!-- Start Form -->
@@ -29,32 +30,32 @@
 
           <!-- Date -->
           <div class="card-body">
-            <h5>ท่านเข้าร่วมงานสัมมนาในวันใด</h5><br />
+            <h5>ท่านเข้าร่วมงานสัมมนาในวันใด <span class="required" style="color:red;">*</span></h5><br />
 
             <div>
               <label>
-                <input class="with-gap" name="date_event" type="radio" value="วันพฤหัสบดีที่ 15 สิงหาคม 2562" required />
-                <span for="">วันพฤหัสบดีที่ 15 สิงหาคม 2562</span>
+                <input class="with-gap" name="date_event" type="radio" value="วันศุกร์ที่ 23 สิงหาคม 2562" required />
+                <span for="">วันศุกร์ที่ 23 สิงหาคม 2562</span>
               </label>
 
               <label>
-                <input class="with-gap" name="date_event" type="radio" value="วันพฤหัสบดีที่ 29 สิงหาคม 2562" required />
-                <span for="">วันพฤหัสบดีที่ 29 สิงหาคม 2562</span>
+                <input class="with-gap" name="date_event" type="radio" value="วันพุธที่ 28 สิงหาคม 2562" required />
+                <span for="">วันพุธที่ 28 สิงหาคม 2562</span>
               </label>
             </div><br />
 
             <!-- Q1. -->
-            <h5>1. ด้านเนื้อหา</h5><br />
+            <h5>1. ด้านเนื้อหา <span class="required" style="color:red;">*</span></h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">รายการประเมิน</th>
-                  <th scope="col" style="width: 100px;">มากที่สุด</th>
-                  <th scope="col" style="width: 100px;">มาก</th>
-                  <th scope="col" style="width: 100px;">ปานกลาง</th>
-                  <th scope="col" style="width: 100px;">น้อย</th>
-                  <th scope="col" style="width: 100px;">น้อยที่สุด</th>
+                  <th scope="col" style="width: 7%;">มากที่สุด</th>
+                  <th scope="col" style="width: 7%;">มาก</th>
+                  <th scope="col" style="width: 7%;">ปานกลาง</th>
+                  <th scope="col" style="width: 7%;">น้อย</th>
+                  <th scope="col" style="width: 7%;">น้อยที่สุด</th>
                 </tr>
               </thead>
               <tbody>
@@ -78,19 +79,20 @@
             </table>
           </div>
           <!-- End Q1. -->
+
           <!-- Q2. -->
           <div class="card-body">
-            <h5>2. ด้านการถ่ายทอดเนื้อหา</h5><br />
+            <h5>2. ด้านการถ่ายทอดเนื้อหา <span class="required" style="color:red;">*</span></h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">รายการประเมิน</th>
-                  <th scope="col" style="width: 100px;">มากที่สุด</th>
-                  <th scope="col" style="width: 100px;">มาก</th>
-                  <th scope="col" style="width: 100px;">ปานกลาง</th>
-                  <th scope="col" style="width: 100px;">น้อย</th>
-                  <th scope="col" style="width: 100px;">น้อยที่สุด</th>
+                  <th scope="col" style="width: 7%;">มากที่สุด</th>
+                  <th scope="col" style="width: 7%;">มาก</th>
+                  <th scope="col" style="width: 7%;">ปานกลาง</th>
+                  <th scope="col" style="width: 7%;">น้อย</th>
+                  <th scope="col" style="width: 7%;">น้อยที่สุด</th>
                 </tr>
               </thead>
               <tbody>
@@ -134,17 +136,17 @@
 
           <!-- Q3. -->
           <div class="card-body">
-            <h5>3. ด้านสถานที่และอุปกรณ์</h5><br />
+            <h5>3. ด้านสถานที่และอุปกรณ์ <span class="required" style="color:red;">*</span></h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">รายการประเมิน</th>
-                  <th scope="col" style="width: 100px;">มากที่สุด</th>
-                  <th scope="col" style="width: 100px;">มาก</th>
-                  <th scope="col" style="width: 100px;">ปานกลาง</th>
-                  <th scope="col" style="width: 100px;">น้อย</th>
-                  <th scope="col" style="width: 100px;">น้อยที่สุด</th>
+                  <th scope="col" style="width: 7%;">มากที่สุด</th>
+                  <th scope="col" style="width: 7%;">มาก</th>
+                  <th scope="col" style="width: 7%;">ปานกลาง</th>
+                  <th scope="col" style="width: 7%;">น้อย</th>
+                  <th scope="col" style="width: 7%;">น้อยที่สุด</th>
                 </tr>
               </thead>
               <tbody>
@@ -173,7 +175,7 @@
                   <td><input type="radio" name="q3_s3" id="q3_s3_c1" data-col="1" value="1" required></td>
                 </tr>
                 <tr style="text-align:center;">
-                  <th scope="row" style="text-align:left;">3.4 ของว่างรับรอง</th>
+                  <th scope="row" style="text-align:left;">3.4 ของว่างรับรอง และของที่ระลึก</th>
                   <td><input type="radio" name="q3_s4" id="q3_s4_c5" data-col="5" value="5" required></td>
                   <td><input type="radio" name="q3_s4" id="q3_s4_c4" data-col="4" value="4" required></td>
                   <td><input type="radio" name="q3_s4" id="q3_s4_c3" data-col="3" value="3" required></td>
@@ -182,39 +184,23 @@
                 </tr>
 
               </tbody>
-            </table><br />
-
-
-            <h5>วันและเวลาที่สะดวกเข้าร่วมในครั้งถัดไป</h5><br />
-
-            <div>
-              <label>
-                <input class="with-gap" name="q3_time" type="radio" value="ช่วงเช้า (9:00 - 12:00 น.)" required />
-                <span for="">ช่วงเช้า (9:00 - 12:00 น.)</span>
-              </label>
-
-              <label>
-                <input class="with-gap" name="q3_time" type="radio" value="ช่วงบ่าย (13:00 - 16:00 น.)" required />
-                <span for="">ช่วงบ่าย (13:00 - 16:00 น.)</span>
-              </label>
-            </div>
-
+            </table>
           </div>
           <!-- End Q3. -->
 
           <!-- Q4. -->
           <div class="card-body">
-            <h5>4. ด้านการจัดงาน</h5><br />
+            <h5>4. ด้านการจัดงาน <span class="required" style="color:red;">*</span></h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">รายการประเมิน</th>
-                  <th scope="col" style="width: 100px;">มากที่สุด</th>
-                  <th scope="col" style="width: 100px;">มาก</th>
-                  <th scope="col" style="width: 100px;">ปานกลาง</th>
-                  <th scope="col" style="width: 100px;">น้อย</th>
-                  <th scope="col" style="width: 100px;">น้อยที่สุด</th>
+                  <th scope="col" style="width: 7%;">มากที่สุด</th>
+                  <th scope="col" style="width: 7%;">มาก</th>
+                  <th scope="col" style="width: 7%;">ปานกลาง</th>
+                  <th scope="col" style="width: 7%;">น้อย</th>
+                  <th scope="col" style="width: 7%;">น้อยที่สุด</th>
                 </tr>
               </thead>
               <tbody>
@@ -264,59 +250,107 @@
           </div>
           <!-- End Q4. -->
 
-          <!-- ประเภทการบริการที่สนใจ -->
+          <!-- Q5. -->
           <div class="card-body">
-            <h5>ประเภทการบริการที่สนใจ</h5><br />
+            <h5>5. หากมีงานสัมมนาครั้งต่อไป คุณยินดีเข้าร่วมหรือไม่ <span class="required" style="color:red;">*</span></h5><br />
 
-            <table class="table table-bordered">
-              <thead class="thead-light">
-                <tr style="text-align:center;">
-                  <th scope="col">ประเภทการบริการ</th>
-                  <th scope="col" style="width: 250px;">มีความสนใจ/<br />ต้องการบริการในขณะนี้</th>
-                  <th scope="col" style="width: 250px;">ยังไม่สนใจ</th>
+            <div>
+              <label>
+                <input class="with-gap" name="q5" type="radio" value="เข้าร่วม" required />
+                <span for="">เข้าร่วม</span>
+              </label>
 
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="text-align:center;">
-                  <th scope="row" style="text-align:left;">Monitoring as a Service</th>
-                  <td><input type="radio" name="q5_s1" id="q5_s1_c1" value="มีความสนใจ/ต้องการบริการในขณะนี้" required></td>
-                  <td><input type="radio" name="q5_s1" id="q5_s1_c2" value="ยังไม่สนใจ" required></td>
-                </tr>
-                <tr style="text-align:center;">
-                  <th scope="row" style="text-align:left;">Software Defined Infrastructure</th>
-                  <td><input type="radio" name="q5_s2" id="q5_s2_c1" value="มีความสนใจ/ต้องการบริการในขณะนี้" required></td>
-                  <td><input type="radio" name="q5_s2" id="q5_s2_c2" value="ยังไม่สนใจ" required></td>
-                </tr>
-
-              </tbody>
-            </table>
+              <label>
+                <input class="with-gap" name="q5" type="radio" value="ไม่เข้าร่วม" required />
+                <span for="">ไม่เข้าร่วม</span>
+              </label>
+            </div>
           </div>
-          <!-- End -->
+          <!-- End Q5. -->
 
-          <!-- Next Seminar -->
-          <div class="card-header">
-            <h5>หัวข้อสัมมนาที่ต้องการเข้าร่วมในครั้งถัดไป</h5>
-          </div>
-
+          <!-- Q6. -->
           <div class="card-body">
-            <label class="container">
-              <textarea class="form-control" name="next_seminar_detail" id="next_seminar_detail" style="width:80%; height:50%;"></textarea>
-            </label>
-          </div>
-          <!-- End Next Seminar -->
+            <h5>6. การจัดงานครั้งต่อไป ท่านสะดวกเข้าร่วมช่วงเวลาใด <span class="required" style="color:red;">*</span></h5><br />
 
-          <!-- Comment. -->
-          <div class="card-header">
-            <h5>ข้อเสนอแนะเพิ่มเติม</h5>
-          </div>
+            <div>
+              <label>
+                <input class="with-gap" name="q6" type="radio" value="ช่วงเช้า (9:00 - 12:00 น.)" required />
+                <span for="">ช่วงเช้า (9:00 - 12:00 น.)</span>
+              </label>
 
+              <label>
+                <input class="with-gap" name="q6" type="radio" value="ช่วงบ่าย (13:00 - 16:00 น.)" required />
+                <span for="">ช่วงบ่าย (13:00 - 16:00 น.)</span>
+              </label>
+            </div>
+
+          </div>
+          <!-- End Q6. -->
+
+          <!-- Q7. -->
           <div class="card-body">
-            <label class="container">
-              <textarea class="form-control" name="suggestions_detail" id="suggestions_detail" style="width:80%; height:50%;"></textarea>
-            </label>
+            <h5>7. กิจกรรมที่ต้องการให้จัดในครั้งถัดไป (เลือกได้มากกว่า 1 ข้อ) <span class="required" style="color:red;">*</span></h5><br />
+
+            <div class="choice-checkbox">
+              <div class="custom-control custom-checkbox checkbox-lg">
+                <input type="checkbox" class="custom-control-input" size="lg" id="q7_1" name="q7[]" value="กลยุทธ์จัดการร้านเล็บ">
+                <label class="custom-control-label" for="q7_1">กลยุทธ์จัดการร้านเล็บ</label>
+              </div>
+              <div class="custom-control custom-checkbox checkbox-lg">
+                <input type="checkbox" class="custom-control-input" id="q7_2" name="q7[]" value="เทคโนโลยี แอปพลิเคชันที่เหมาะสำหรับร้านเล็บ">
+                <label class="custom-control-label" for="q7_2">เทคโนโลยี แอปพลิเคชันที่เหมาะสำหรับร้านเล็บ</label>
+              </div>
+              <div class="custom-control custom-checkbox checkbox-lg">
+                <input type="checkbox" class="custom-control-input" id="q7_3" name="q7[]" value="แข่งขันทำเล็บ">
+                <label class="custom-control-label" for="q7_3">แข่งขันทำเล็บ</label>
+              </div>
+              <div class="custom-control custom-checkbox checkbox-lg">
+                <input type="checkbox" class="custom-control-input" id="q7_4" name="q7[]" value="Loga Workshop การใช้งานแอป Loga สำหรับร้านเล็บ">
+                <label class="custom-control-label" for="q7_4">Loga Workshop การใช้งานแอป Loga สำหรับร้านเล็บ</label>
+              </div>
+              <div class="custom-control custom-checkbox checkbox-lg">
+                <input type="checkbox" class="custom-control-input" id="q7_5" name="q7[]" value="รวมร้านเล็บ แชร์ ประสบการณ์ความสำเร็จ">
+                <label class="custom-control-label" for="q7_5">รวมร้านเล็บ แชร์ ประสบการณ์ความสำเร็จ</label>
+              </div>
+              <div class="custom-control custom-checkbox checkbox-lg">
+                <input type="checkbox" class="custom-control-input " id="q7_6" name="q7[]" value="Beauty Blogger แชร์เคล็ดลับ content ในการทำเล็บ">
+                <label class="custom-control-label" for="q7_6">Beauty Blogger แชร์เคล็ดลับ content ในการทำเล็บ</label>
+              </div>
+              <div class="custom-control custom-checkbox checkbox-lg">
+                <input type="checkbox" class="custom-control-input" id="q7_7" name="q7[]" value="อื่นๆ" onclick="Q7_Another()">
+                <label class="custom-control-label" for="q7_7">อื่นๆ</label>
+                <textarea class="form-control" name="another_Q7_7" id="another_Q7_7" style="width:50%; height:30%; display:none"></textarea>
+
+              </div>
+            </div>
           </div>
-          <!-- End Comment. -->
+          <!-- End Q7. -->
+
+
+
+          <!-- Q8. -->
+          <div class="card-body">
+            <h5>8. ทำไมถึงตัดสินใจเข้าร่วมงานสัมมนา <span class="required" style="color:red;">*</span></h5><br />
+
+            <div>
+              <label class="container" style="padding-left:50px;">
+                <textarea class="form-control" name="seminar_detail" id="seminar_detail" value="" style="width:60%; height:30%;" required></textarea>
+              </label>
+            </div>
+          </div>
+          <!-- End Q8. -->
+
+          <!-- Q9. -->
+          <div class="card-body">
+            <h5>9. ข้อคิดเห็นและข้อเสนอแนะอื่นๆ</h5><br />
+
+            <div>
+              <label class="container" style="padding-left:50px;">
+                <textarea class="form-control" name="suggestions_detail" id="suggestions_detail" value="" style="width:60%; height:30%;"> </textarea>
+              </label>
+            </div>
+          </div>
+          <!-- End Q9. -->
 
           <!-- Button submit -->
           <div class="card-body">
@@ -380,6 +414,41 @@
     });
   </script>
   <!-- end script submit -->
+
+  <script>
+    //   $(document).ready(function() {
+    //     $('#dtHorizontalExample').DataTable({
+    //       "scrollX": true
+    //     });
+    //     $('.dataTables_length').addClass('bs-select');
+    //   });
+    // 
+  </script>
+
+  <style>
+    .dtHorizontalExampleWrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #dtHorizontalExample th,
+    td {
+      white-space: nowrap;
+    }
+
+    table.dataTable thead .sorting:after,
+    table.dataTable thead .sorting:before,
+    table.dataTable thead .sorting_asc:after,
+    table.dataTable thead .sorting_asc:before,
+    table.dataTable thead .sorting_asc_disabled:after,
+    table.dataTable thead .sorting_asc_disabled:before,
+    table.dataTable thead .sorting_desc:after,
+    table.dataTable thead .sorting_desc:before,
+    table.dataTable thead .sorting_desc_disabled:after,
+    table.dataTable thead .sorting_desc_disabled:before {
+      bottom: .5em;
+    }
+  </style>
 
 </body>
 

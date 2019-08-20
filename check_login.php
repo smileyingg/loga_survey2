@@ -5,7 +5,7 @@ session_start();
 	include 'dbconfig.php';
 	$username =	$_POST['txtUsername'];
 	$password = $_POST['txtPassword'];
-	$strSQL = "SELECT * FROM member WHERE username = '$username'AND pass = '$password'";
+	$strSQL = "SELECT * FROM members WHERE username = '$username'AND pass = '$password'";
  	$result = mysqli_query($conn, $strSQL);
 	$row = mysqli_fetch_assoc($result);
 	if (!$row) {
