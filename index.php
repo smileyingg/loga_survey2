@@ -293,28 +293,24 @@
 
             <div class="choice-checkbox">
               <div class="custom-control custom-checkbox checkbox-lg">
-                <input type="checkbox" class="custom-control-input" size="lg" id="q7_1" name="q7[]" value="กลยุทธ์จัดการร้านเล็บ">
-                <label class="custom-control-label" for="q7_1">กลยุทธ์จัดการร้านเล็บ</label>
+                <input type="checkbox" class="custom-control-input" size="lg" id="q7_1" name="q7[]" value="เรียนรู้เทคโนโลยี แอปพลิเคชันที่เหมาะสมกับร้านค้า">
+                <label class="custom-control-label" for="q7_1">เรียนรู้เทคโนโลยี แอปพลิเคชันที่เหมาะสมกับร้านค้า</label>
               </div>
               <div class="custom-control custom-checkbox checkbox-lg">
-                <input type="checkbox" class="custom-control-input" id="q7_2" name="q7[]" value="เทคโนโลยี แอปพลิเคชันที่เหมาะสำหรับร้านเล็บ">
-                <label class="custom-control-label" for="q7_2">เทคโนโลยี แอปพลิเคชันที่เหมาะสำหรับร้านเล็บ</label>
+                <input type="checkbox" class="custom-control-input" id="q7_2" name="q7[]" value="Loga Workshop การใช้งานแอปพลิเคชัน Loga">
+                <label class="custom-control-label" for="q7_2">Loga Workshop การใช้งานแอปพลิเคชัน Loga</label>
               </div>
               <div class="custom-control custom-checkbox checkbox-lg">
-                <input type="checkbox" class="custom-control-input" id="q7_3" name="q7[]" value="แข่งขันทำเล็บ">
-                <label class="custom-control-label" for="q7_3">แข่งขันทำเล็บ</label>
+                <input type="checkbox" class="custom-control-input" id="q7_3" name="q7[]" value="รู้จัก Loyalty Program มากขึ้น">
+                <label class="custom-control-label" for="q7_3">รู้จัก Loyalty Program มากขึ้น</label>
               </div>
               <div class="custom-control custom-checkbox checkbox-lg">
-                <input type="checkbox" class="custom-control-input" id="q7_4" name="q7[]" value="Loga Workshop การใช้งานแอป Loga สำหรับร้านเล็บ">
-                <label class="custom-control-label" for="q7_4">Loga Workshop การใช้งานแอป Loga สำหรับร้านเล็บ</label>
+                <input type="checkbox" class="custom-control-input" id="q7_4" name="q7[]" value="ไอเดียทำโปรโมชันสำหรับร้านค้า">
+                <label class="custom-control-label" for="q7_4">ไอเดียทำโปรโมชันสำหรับร้านค้า</label>
               </div>
               <div class="custom-control custom-checkbox checkbox-lg">
-                <input type="checkbox" class="custom-control-input" id="q7_5" name="q7[]" value="รวมร้านเล็บ แชร์ ประสบการณ์ความสำเร็จ">
-                <label class="custom-control-label" for="q7_5">รวมร้านเล็บ แชร์ ประสบการณ์ความสำเร็จ</label>
-              </div>
-              <div class="custom-control custom-checkbox checkbox-lg">
-                <input type="checkbox" class="custom-control-input " id="q7_6" name="q7[]" value="Beauty Blogger แชร์เคล็ดลับ content ในการทำเล็บ">
-                <label class="custom-control-label" for="q7_6">Beauty Blogger แชร์เคล็ดลับ content ในการทำเล็บ</label>
+                <input type="checkbox" class="custom-control-input" id="q7_5" name="q7[]" value="งานออกบูทแสดงสินค้า">
+                <label class="custom-control-label" for="q7_5">งานออกบูทแสดงสินค้า</label>
               </div>
               <div class="custom-control custom-checkbox checkbox-lg">
                 <input type="checkbox" class="custom-control-input" id="q7_7" name="q7[]" value="อื่นๆ" onclick="Q7_Another()">
